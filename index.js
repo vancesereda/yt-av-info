@@ -1,6 +1,7 @@
 const getVideo = require('./getVideo');
 const express = require('express')
 const app = express();
+const port = process.env.PORT || 5000;
 
 app.get('/:id', (req,res) => {
 
@@ -8,4 +9,4 @@ app.get('/:id', (req,res) => {
     // res.send(JSON.stringify(getVideo(req.params.id)))
 })
 
-app.listen(3000)
+app.listen(process.env.PORT)
