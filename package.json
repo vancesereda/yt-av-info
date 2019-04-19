@@ -5,14 +5,13 @@
   "main": "Youtube.js",
   "scripts": {
     "start": "node index.js",
-    "server": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "npm install"
   },
   "author": "Vance Sereda",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "qs": "^6.7.0",
+    "urlencode": "^1.1.0",
+    "xfetch-js": "^0.3.4"
   }
 }
