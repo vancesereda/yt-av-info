@@ -8,7 +8,7 @@
     "server": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "npm install --prefix client"
+    "heroku-postbuild": "npm install"
   },
   "author": "Vance Sereda",
   "license": "ISC",
