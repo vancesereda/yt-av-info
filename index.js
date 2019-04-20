@@ -3,7 +3,7 @@ const express = require('express')
 const app = express();
 const port = process.env.PORT || 5000;
 
-app.get('/api', (req,res) => {
+app.get('/api', async (req,res) => {
 
     if (req.query) {
         getVideo(req.query.id)
